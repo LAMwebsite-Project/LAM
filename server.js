@@ -12,6 +12,7 @@ app.use(urlencoded({extended: false}));
 app.use(cookieParser());
 
 app.use('/', require('./routes/homepage'));
+app.use('/', require('./routes/quiz'));
 
 // route voor all resources. (bijv. js & css).
 app.use('/resources', require('./routes/resources'));

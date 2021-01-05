@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 const app = express();
 
-// view engine setup
+// view engine setup.
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -13,7 +13,10 @@ app.use(cookieParser());
 
 app.use('/', require('./routes/homepage'));
 
-// route all unused routes to 404
-app.use('*')
+// route voor all resources. (bijv. js & css).
+app.use('/resources', require('./routes/resources'));
+
+// route alle ongebruikte routes naar de 404 page.
+app.use('*', require('./routes/404'));
 
 app.listen(80);

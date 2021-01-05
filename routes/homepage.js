@@ -1,9 +1,15 @@
+const languageHelper = require('../helpers/language');
 const express = require('express');
 const router = express.Router();
 
-router.get('/:name', (req, res) => {
+router.get('/', (req, res) => {
+    let language = languageHelper(req, res);
+
+    let {lang, title} = require(`../languages/homepage_${language}.json`);
+
     res.render('homepage/homepage', {
-        name: req.params.name
+        lang: lang,
+        title: title,
     });
 });
 

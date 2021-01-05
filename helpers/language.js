@@ -7,13 +7,11 @@ function checkLanguage(req, res) {
     for(lang in acceptedLanguages) {
         if(cookie == acceptedLanguages[lang]) {
             accepted = true;
-            console.log('ok');
         }
     }
 
     if(cookie == undefined || accepted == false) {
         cookie = setLanguage(req, res);
-        console.log('wow')
     }
 
     return cookie.toUpperCase();

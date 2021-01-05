@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colour-header-text: #72767d;
+    --colour-text: #b9bbbe;
+    --colour-text-alt: #89CFEF;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 50px;
+}
+
+h5 {
+    font-size: 45px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p, a {
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--colour-header-text);
+}
+
+p {
+    color: var(--colour-text);
+}
+
+a {
+    color: var(--colour-text-alt);
+
+    text-decoration: dashed;
+    font-weight: bold;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

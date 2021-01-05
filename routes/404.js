@@ -4,13 +4,17 @@ const router = express.Router();
 
 
 router.get('*', (req, res) => {
-    let language = languageHelper(req);
+    let language = languageHelper(req, res);
 
-    let {title, errorh1, errorp} = require(`../languages/404_${language}.json`);
+    let {lang, title, errorh1, errorp, pagesText} = require(`../languages/404_${language}.json`);
 
-    console.log(`${title}, ${errorh1}, ${errorp}`)
-
-    res.render('404/404');
+    res.render('404/404', {
+        lang: lang,
+        title: title,
+        errorh1: errorh1,
+        errorp: errorp,
+        pagesText: pagesText
+    });
 });
 
 module.exports = router;

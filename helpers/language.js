@@ -1,9 +1,17 @@
+const acceptedLanguages = ['en', 'nl'];
+
 function checkLanguage(req) {
-    let cookie;
-    if(req.cookies['lang'] == undefined) {
+    let cookie = req.cookies['lang'];
+    let accepted = false;
+    
+    for(lang in acceptedLanguages) {
+        if(cookie == lang) {
+            accepted = true;
+        }
+    }
+
+    if(cookie == undefined || accepted == false) {
         cookie = setLanguage(req);
-    } else {
-        cookie = req.cookies['lang'];
     }
 
     return cookie.toUpperCase();

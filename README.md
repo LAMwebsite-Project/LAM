@@ -1,5 +1,5 @@
-# LAM-backend
-De backend van de website in nodeJS
+# LAM
+Website voor het LAM met webserver
 
 # Installation
 1. clone repository

@@ -5,12 +5,7 @@ const router = express.Router();
 router.get('/', (req, res) => {
     let language = languageHelper(req, res);
 
-    let {lang, title} = require(`../languages/homepage/${language}.json`);
-
-    res.render('homepage/homepage', {
-        lang: lang,
-        title: title,
-    });
+    res.render('homepage/homepage', require(`../languages/homepage/${language}.json`));
 });
 
 module.exports = router;

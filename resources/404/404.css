@@ -31,6 +31,10 @@ body {
     flex-direction: column;
 }
 
+.pages a {
+    width: min-content;
+}
+
 .image-wrapper {
     padding-left: 20px;
     display: flex;

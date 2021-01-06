@@ -45,3 +45,17 @@ body {
 .image {
     max-width: 200px;
 }
+
+@media only screen and (max-width: 650px) {
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .text-wrapper, .pages {
+        text-align: center;
+    }
+
+    .pages a {
+        width: 100%;
+    }
+}

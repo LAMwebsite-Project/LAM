@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/quiz', (req, res) => {
     let language = languageHelper(req, res);
 
-    let {lang, title} = require(`../languages/quiz_${language}.json`);
+    let {lang, title} = require(`../languages/quiz/${language}.json`);
 
     res.render('quiz/quiz', {
         lang: lang,

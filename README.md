@@ -1,7 +1,26 @@
 # LAM
-Website voor het LAM met webserver
+Website voor het LAM. Gemaakt met nodeJS & Express
 
-# Installation
-1. clone repository
-2. npm i express mongoose cookie-parser
-3. npm start
+# prerequisites
+[nodeJS](https://nodejs.org/en/)
+
+# Installatie
+1. clone de repository
+```
+> git clone "https://github.com/LAMwebsite-Project/LAM.git"
+```
+2. Ga in de project folder
+```
+> cd "./LAM"
+```
+2. Install de required node modules
+```
+> npm i express cookie-parser
+```
+3. Om de server te starten
+```
+> npm start
+```
+4. Ga naar localhost in je browser
+
+**Done!**

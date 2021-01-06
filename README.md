@@ -15,7 +15,7 @@ Website voor het LAM. Gemaakt met nodeJS, Express & EJS
 ```
 2. Install de required node modules
 ```
-> npm i express cookie-parser
+> npm i express cookie-parser ejs
 ```
 3. Om de server te starten
 ```

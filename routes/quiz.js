@@ -13,4 +13,12 @@ router.get('/quiz', (req, res) => {
     });
 });
 
+router.post('/quiz', (req, res) => {
+    let language = languageHelper(req, res);
+
+    let responseJSON = require(`../quiz/${language}/1.json`);
+    
+    res.json(responseJSON);
+}); 
+
 module.exports = router;

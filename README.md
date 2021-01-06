@@ -1,5 +1,5 @@
 # LAM
-Website voor het LAM. Gemaakt met nodeJS & Express
+Website voor het LAM. Gemaakt met nodeJS, Express & EJS
 
 # prerequisites
 [nodeJS](https://nodejs.org/en/)

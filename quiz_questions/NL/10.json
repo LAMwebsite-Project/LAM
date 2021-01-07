@@ -1,6 +1,6 @@
 {
     "question": "Was dit een leuke quiz?",
-    "answerA": "Ja, ik heb er van genoten",
-    "answerB": "Dit was een oke quiz",
-    "answerC": "Nee niet echt hadt leuker gekunt"
+    "A": "Ja, ik heb er van genoten",
+    "B": "Dit was een oke quiz",
+    "C": "Nee niet echt hadt leuker gekunt"
 }

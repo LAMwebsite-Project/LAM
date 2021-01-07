@@ -1,6 +1,6 @@
 {
     "question": "Are you more a cat person or a dog person",
-    "answerA": "I'm more a cat person",
-    "answerB": "I'm more a dog person",
-    "answerC": "I don't have that much with either"
+    "A": "I'm more a cat person",
+    "B": "I'm more a dog person",
+    "C": "I don't have that much with either"
 }

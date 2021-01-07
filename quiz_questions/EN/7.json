@@ -1,6 +1,6 @@
 {
     "question": "What is the answer?",
-    "answerA": "Answer",
-    "answerB": "42",
-    "answerC": "I don't know"
+    "A": "Answer",
+    "B": "42",
+    "C": "I don't know"
 }

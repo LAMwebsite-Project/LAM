@@ -1,6 +1,6 @@
 {
     "question": "Is dit een stomme vraag?",
-    "answerA": "Jazeker, hoe durf je dit te vragen",
-    "answerB": "Hangt er af van hoe je er naar kijkt",
-    "answerC": "Nee stomme vragen bestaan niet"
+    "A": "Jazeker, hoe durf je dit te vragen",
+    "B": "Hangt er af van hoe je er naar kijkt",
+    "C": "Nee stomme vragen bestaan niet"
 }

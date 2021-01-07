@@ -1,6 +1,6 @@
 {
     "question": "Was this a fun quiz?",
-    "answerA": "Yessssss, I really enjoyed it",
-    "answerB": "It was pretty okay",
-    "answerC": "No, not really. It could be way funnier"
+    "A": "Yessssss, I really enjoyed it",
+    "B": "It was pretty okay",
+    "C": "No, not really. It could be way funnier"
 }

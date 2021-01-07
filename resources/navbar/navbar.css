@@ -1,0 +1,72 @@
+.navbar-ghost, .navbar {
+    width: 100vw;
+    height: 75px;  
+}
+
+.navbar {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+}
+
+.navbar-logo-div {
+    display: flex;
+}
+
+.navbar-logo-div img {
+    max-height: 55px;
+    width: auto;
+
+    align-self: center;
+    padding: 0 20px;
+
+    -webkit-user-drag: none;
+    user-select: none;
+
+    cursor: pointer;
+}
+
+.navbar-buttons {
+    padding: 0 20px
+}
+
+.navbar-button {
+    margin: 0 10px;
+
+    max-height: 50px;
+
+    border-radius: 10px;
+    border: none !important;
+
+    box-shadow: 3px 3px 5px 6px #E7EBF7;
+
+    cursor: pointer;
+}
+
+.navbar-button p {
+    color: black;
+}
+
+.navbar-button:focus {
+    outline: none !important;
+}
+
+#navbar-language-button {
+    min-width: 50px;
+    background-color: var(--colour-text-alt);
+}
+
+#navbar-ticket-button {
+    min-width: 125px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 450px) {
+    #navbar-ticket-button {
+        display: none !important;
+    }
+}

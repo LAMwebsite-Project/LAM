@@ -1,6 +1,6 @@
 {
     "question": "Is this a idiotical question?",
-    "answerA": "Yes, ofcourse. Why do you ask?",
-    "answerB": "It depends on the way you view it",
-    "answerC": "No, idiotical questions don't exist"
+    "A": "Yes, ofcourse. Why do you ask?",
+    "B": "It depends on the way you view it",
+    "C": "No, idiotical questions don't exist"
 }

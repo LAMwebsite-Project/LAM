@@ -1,6 +1,6 @@
 {
     "question": "klopt deze vraag?",
-    "answerA": "ja, want hij is goed gespeld",
-    "answerB": "Als de vraagt leeft dan is het antwoord ja anders nee",
-    "answerC": "Nee, want hij maakt geen geluid"
+    "A": "ja, want hij is goed gespeld",
+    "B": "Als de vraagt leeft dan is het antwoord ja anders nee",
+    "C": "Nee, want hij maakt geen geluid"
 }

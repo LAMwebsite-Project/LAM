@@ -1,6 +1,6 @@
 {
     "question": "Do you love to snack?",
-    "answerA": "YESSSSSSSS!!!",
-    "answerB": "Sometimes",
-    "answerC": "No not really"
+    "A": "YESSSSSSSS!!!",
+    "B": "Sometimes",
+    "C": "No not really"
 }

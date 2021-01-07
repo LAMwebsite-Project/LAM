@@ -1,6 +1,6 @@
 {
     "question": "Are you a sporty person?",
-    "answerA": "Yes, I really love to sport",
-    "answerB": "I love to sport but can't call myself a sporty person",
-    "answerC": "No, not really"
+    "A": "Yes, I really love to sport",
+    "B": "I love to sport but can't call myself a sporty person",
+    "C": "No, not really"
 }

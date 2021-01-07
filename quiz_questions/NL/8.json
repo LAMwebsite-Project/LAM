@@ -1,6 +1,6 @@
 {
     "question": "Waar staat 'LAM' voor denk je?",
-    "answerA": "Leuke art museum",
-    "answerB": "Lopende art museum",
-    "answerC": "Leven, art en muziek"
+    "A": "Leuke art museum",
+    "B": "Lopende art museum",
+    "C": "Leven, art en muziek"
 }

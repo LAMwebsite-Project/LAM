@@ -1,6 +1,6 @@
 {
     "question": "Ben je een sportief persoon?",
-    "answerA": "Ja, ik hou er van om te sporten",
-    "answerB": "Ik doe wel aan sporten maar kan mezelf geen sportief persoon noemen",
-    "answerC": "Nee, niet echt"
+    "A": "Ja, ik hou er van om te sporten",
+    "B": "Ik doe wel aan sporten maar kan mezelf geen sportief persoon noemen",
+    "C": "Nee, niet echt"
 }

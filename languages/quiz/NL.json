@@ -1,5 +1,14 @@
 {
     "navbarTicketText": "Koop kaartje",
+
     "lang": "nl",
-    "title": "LAM | Welk kunstwerk ben jij?"
+    "title": "LAM | Welk kunstwerk ben jij?",
+
+    "quizTitle": "Welk kunstwerk ben jij",
+    "quizDescription": "Doe deze quiz al wil je weten welk kunstwerk van ons museum je bent!",
+    "quizStartButtonText": "Start quiz",
+    "quizEndTitle": "Je bent...",
+    "quizEndDescription": "Wat een geweldig kunstwerk! Je hebt perfecte keuzes gemaakt. In het echt bekijken?",
+    "quizEndButtonText": "Bezoek het LAM",
+    "quizRedoButtonText": "Quiz herstarten"
 }

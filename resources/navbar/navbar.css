@@ -1,6 +1,8 @@
 .navbar-ghost, .navbar {
     width: 100vw;
     height: 75px;  
+
+    padding-bottom: 25px;
 }
 
 .navbar {
@@ -68,5 +70,11 @@
 @media only screen and (max-width: 450px) {
     #navbar-ticket-button {
         display: none !important;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .navbar {
+        position: absolute;
     }
 }

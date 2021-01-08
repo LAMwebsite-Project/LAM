@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/quiz/quiz.css">
     <%- include('../partials/global/global') %>
     <title><%= title%></title>
 </head>
 <body>
     <%- include('../partials/navbar/navbar') %>
+
+    <div class="content" id="content">
+        <div class="active block" id="start-div">
+            <h1 class="text"><%= quizTitle%></h1> 
+            <p class="text"><%= quizDescription%></p>
+
+            <button class="start-button button" id="start-button">
+                <p class="button-text"><%= quizStartButtonText%></p>
+            </button>
+        </div>
+
+        <div class="block" id="end-div">
+            <h1 class="text"><%= quizEndTitle%></h1>
+            <img />
+            <p class="text" id="end-image-description"></p>
+            <p class="text"><%= quizEndDescription%></p>
+
+            <button class="button selected">
+                <p class="button-text"><%= quizEndButtonText%></p>
+            </button>
+
+            <button class="button">
+                <p class="button-text"><%= quizRedoButtonText%></p>
+            </button>
+        </div>
+
+        <script src="/resources/quiz/quiz.js"></script>
+    </div>
 </body>
 </html>

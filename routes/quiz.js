@@ -13,20 +13,22 @@ router.get('/quiz', (req, res) => {
 
 router.get('/GET/quiz', (req, res) => {
     let language = languageHelper(req, res);
+    let responseJSON = {};
 
+    for(let x = 0; x < 5; x++) {
+        let number = Math.floor(Math.random() * 10 + 1);
+        let tempJSON = require(`../quiz_questions/${language}/${number}.json`);
 
-    let amount = req.query.amount;
-    amount = parseInt(amount);
-
-    if(amount == undefined || amount == null || Number.isNaN(amount) || amount <= 0) {
-        amount = 5; // Default hoeveelheid
-    } else if(amount > 10) { // max hoeveelheid
-        amount = 10
+        responseJSON[x + 1] = tempJSON;
     }
 
-    let responseJSON = {amount: amount};
-    
     res.json(responseJSON);
 }); 
+
+router.get('/GET/art', (req, res) => {
+    let language = languageHelper(req, res);
+
+    res.json(require(`../quiz_endings/${language}/${req.query.ABC}`));
+});
 
 module.exports = router;

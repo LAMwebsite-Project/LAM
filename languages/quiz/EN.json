@@ -1,5 +1,14 @@
 {
     "navbarTicketText": "Koop kaartje",
+
     "lang": "en",
-    "title": "LAM | Which artpiece are you?"
+    "title": "LAM | Which artpiece are you?",
+
+    "quizTitle": "Which artpiece are you",
+    "quizDescription": "Take this quiz to see which artpiece from our museum you are!",
+    "quizStartButtonText": "Start quiz",
+    "quizEndTitle": "You are...",
+    "quizEndDescription": "What a wonderful piece of art! You've made perfect choices. Want to see it in the flesh?",
+    "quizEndButtonText": "Visit the LAMs",
+    "quizRedoButtonText": "Restart quiz"
 }

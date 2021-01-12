@@ -2,9 +2,6 @@ const languageHelper = require('../helpers/language');
 const express = require('express');
 const router = express.Router();
 
-const maxQuestions = 10;
-const defaultQuestions = 5;
-
 router.get('/quiz', (req, res) => {
     let language = languageHelper(req, res);
 
@@ -25,10 +22,10 @@ router.get('/GET/quiz', (req, res) => {
     res.json(responseJSON);
 }); 
 
-router.get('/GET/art', (req, res) => {
+router.get('/GET/quizEnding', (req, res) => {
     let language = languageHelper(req, res);
 
-    res.json(require(`../quiz_endings/${language}/${req.query.ABC}`));
+    res.json(require(`../quiz_endings/${language}/${req.query.abc}.json`));
 });
 
 module.exports = router;

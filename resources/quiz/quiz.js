@@ -5,6 +5,8 @@ let httpRequest = new XMLHttpRequest();
 let questions = {};
 let answers = [0, 0, 0, 0, 0];
 let blocks = [];
+let state = 'start';
+let ending;
 
 quizStartButton.addEventListener('click', () => {
     quizStartDiv.classList.toggle('active');
@@ -15,8 +17,13 @@ quizStartButton.addEventListener('click', () => {
 
 httpRequest.onreadystatechange = function() {
     if (httpRequest.readyState === 4) {
-        questions = JSON.parse(httpRequest.response);
-        createQuestions();
+        if(state == 'start') {
+            questions = JSON.parse(httpRequest.response);
+            createQuestions();
+        } else {
+            ending = JSON.parse(httpRequest.response);
+            createEnding();
+        }
     }
 }
 
@@ -27,13 +34,14 @@ function createQuestions() {
         block.classList.toggle('active');
 
         let question = document.createElement('h1');
+
         question.classList.toggle('text')
         question.innerText = questions[x + 1]['question'];
 
         let image = document.createElement('img');
+
         image.classList.toggle('image');
         image.src = questions[x + 1]['image'];
-
 
         let answerA = document.createElement('button');
         let answerAText = document.createElement('p');
@@ -108,5 +116,64 @@ function answerClick(questionNumber, ABC, allAnswers, answer) {
         blocks.forEach(element => {
             element.classList.toggle('active');
         });
+
+        getEnding();
     }
+}
+
+function countAnswers() {
+    let As = answers.filter(element => element == 'A').length;
+    let Bs = answers.filter(element => element == 'B').length;
+    let Cs = answers.filter(element => element == 'C').length;
+
+    let dict = {A: As, B: Bs, C: Cs};
+
+    return Object.keys(dict).reduce((a, b) => dict[a] > dict[b] ? a : b);
+}
+
+function getEnding() {
+    abc = countAnswers();
+    state = 'ending';
+
+    httpRequest.open('GET', `/GET/quizEnding?abc=${abc}`, true);
+    httpRequest.send();
+}
+
+function createEnding() {
+    let block = document.createElement('div');
+
+    block.classList.toggle('block');
+    block.classList.toggle('active');
+
+    let image = document.createElement('img');
+
+    image.classList.toggle('image');
+    image.src = ending['image'];
+
+    let description = document.createElement('h1');
+
+    description.classList.toggle('text')
+    description.innerText = ending['description'];
+
+    let visitButton = document.createElement('button');
+    let visitButtonText = document.createElement('p');
+
+    visitButton.classList.toggle('button');
+    visitButtonText.innerText = ending['visitButtonText'];
+    visitButtonText.classList.toggle('button-text');
+
+    visitButton.appendChild(visitButtonText);
+
+    block.appendChild(image);
+    block.appendChild(description);
+    block.appendChild(visitButton);
+    quizContent.appendChild(block);
+
+    visitButton.addEventListener('click', () => {
+        if(document.cookie.includes('lang=en')) {
+            window.location.href = 'https://www.lamlisse.nl/en/tickets/';
+        } else {
+            window.location.href = 'https://www.lamlisse.nl/tickets/';
+        }
+    });
 }

@@ -1,7 +1,7 @@
 {
     "image": "/resources/quizimages/img2.jpg",
-    "question": "Do you like lighter coulors or darker coulors?",
-    "A": "JAAAAAAA!!!",
-    "B": "Ja, zo af en toe",
-    "C": "Nee, niet echt"
+    "question": "Do you like lighter coulors or darker colours?",
+    "A": "Lighter colours",
+    "B": "Darker colours",
+    "C": "I'm indifferent"
 }

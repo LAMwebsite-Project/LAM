@@ -1,7 +1,7 @@
 {
     "image": "/resources/quizimages/img5.jpg",
-    "question": "Are you more a cat person or a dog person",
+    "question": "Are you more a cat person or a dog person?",
     "A": "I'm more a cat person",
     "B": "I'm more a dog person",
-    "C": "I don't have that much with either"
+    "C": "i'm indifferent"
 }

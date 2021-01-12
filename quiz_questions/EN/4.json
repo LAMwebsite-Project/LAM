@@ -1,6 +1,6 @@
 {
     "image": "/resources/quizimages/img4.jpg",
-    "question": "Is this a valid question?",
+    "question": "Is this a valid question",
     "A": "Yes, because the question says so",
     "B": "How is that a question?",
     "C": "No, because it has no check mark"

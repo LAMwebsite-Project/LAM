@@ -1,5 +1,7 @@
 {
     "navbarTicketText": "Get tickets",
     "lang": "en",
-    "title": "LAM | Home"
+    "title": "LAM | Home",
+    "homepageQuizText": "Which art work are you?",
+    "homepageTickets": "Get tickets"
 }

@@ -3,5 +3,14 @@
     "lang": "en",
     "title": "LAM | Home",
     "homepageQuizText": "Which art work are you?",
-    "homepageTickets": "Get tickets"
+    "homepageTickets": "Get tickets",
+    "SlideText1": "test",
+    "SlideText2": "text",
+    "SlideText3": "word",
+    "SlideText4": "stuff",
+    "videoHeader": "Explore the LAM and its beautiful surrounding",
+    "videoInformation": "Let yourself be suprised by the art work, be amazed at the architecture,",
+    "videoInformation2": "dive in a mystical world at the castle keukenhof, explore the petting zoo,",
+    "videoInformation3": "run trough the beautiful forest and the estate or enjoy the colorfull flowerfields.",
+    "videoInformation4": "Do we see you soon?"
 }

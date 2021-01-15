@@ -138,7 +138,6 @@
 
 .flex-container {
   display: flex;
-  background-color: lightblue;
   color: black;
   flex-wrap: wrap;
   justify-content: space-around;

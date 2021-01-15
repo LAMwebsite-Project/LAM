@@ -11,12 +11,20 @@ router.get('/quiz', (req, res) => {
 router.get('/GET/quiz', (req, res) => {
     let language = languageHelper(req, res);
     let responseJSON = {};
+    let used = []
 
     for(let x = 0; x < 5; x++) {
+        
         let number = Math.floor(Math.random() * 10 + 1);
+
+        if(used.includes(number)) {
+            continue;
+        } 
+
         let tempJSON = require(`../quiz_questions/${language}/${number}.json`);
 
         responseJSON[x + 1] = tempJSON;
+        used.push(number)
     }
 
     res.json(responseJSON);

@@ -1,6 +1,8 @@
 # LAM
 Website voor het LAM. Gemaakt met nodeJS, Express & EJS
 
+[LIVE](http://zoezo.wtf/)
+
 # prerequisites
 [nodeJS](https://nodejs.org/en/)
 

@@ -15,25 +15,25 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 4</div>
-      <img src="/resources/slideshowimages/galleryimg1.jpeg" height="auto" style="width:100vw">
+      <img src="/resources/slideshowimages/galleryimg1.jpeg" alt="three sculpt heads" height="auto" style="width:100vw">
       <div class="text"><%= SlideText1%></div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 4</div>
-      <img src="/resources/slideshowimages/galleryimg2.jpg" height="auto" style="width:100vw">
+      <img src="/resources/slideshowimages/galleryimg2.jpg" alt="Art gallery" height="auto" style="width:100vw">
       <div class="text"><%= SlideText2%></div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 4</div>
-      <img src="/resources/slideshowimages/galleryimg3.jpg" height="auto" style="width:100vw";>
+      <img src="/resources/slideshowimages/galleryimg3.jpg" alt="Fruit table" height="auto" style="width:100vw">
       <div class="text"><%= SlideText3%></div>
     </div>
   
     <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="/resources/slideshowimages/galleryimg4.jpg" height="auto" style="width: 100vw">
+        <img src="/resources/slideshowimages/galleryimg4.jpg" alt="LAM building" height="auto" style="width: 100vw">
         <div class="text"><%= SlideText4%></div>
     </div>
 
@@ -53,15 +53,15 @@
 
 <div class="homepage-buttons">
     <button class="homepage-button" id="homepage-quiz">
-        <p><%= homepageQuizText%></p>
+        <%= homepageQuizText%>
     </button>
     <button class="homepage-button" id="homepage-tickets">
-        <p><%=homepageTickets%></p>
+        <%=homepageTickets%>
     </button>
 </div>
 
 <div class="flex-container">
-    <video width="50%" height="50%" controls>
+    <video controls>
         <source src="/resources/videos/LAM1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -71,11 +71,11 @@
         <p><%= videoInformation3%></p>
         <p id="later"><strong><%= videoInformation4%></strong></p>
         <br>
-        <p id="qoutes"><%= qoutes1%></p>
-        <p id="qoutes"><%= qoutes2%></p>
+        <p><%= qoutes1%></p>
+        <p><%= qoutes2%></p>
         <br>
-        <p id="qoutes"><%= qoutes3%></p>
-        <p id="qoutes"><%= qoutes4%></p>
+        <p><%= qoutes3%></p>
+        <p><%= qoutes4%></p>
     </div>
 </div>
 

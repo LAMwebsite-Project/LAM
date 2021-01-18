@@ -14,18 +14,17 @@
  cursor: pointer;
 }
 
-.homepage-button p {
-  color:black;
-}
 #homepage-quiz {
   min-width: 150px;
   background-color: rgba(97, 250, 255, 0.664);
+  padding: 30px;
 }
 
 #homepage-tickets {
   min-width: 50px;
   background-color: rgba(97, 250, 255, 0.664);
-}
+  padding: 30px;
+  }
 
 /* Slideshow container */
 .slideshow-container {
@@ -147,6 +146,8 @@
 
 video {
   cursor: pointer;
+  width:50%;
+  height:50%;
 }
 
 .infobox h1 {

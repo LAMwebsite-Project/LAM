@@ -5,7 +5,7 @@
     "copyright": "© Copyright 2021",
     "homepageQuizText": "Which artwork are you?",
     "homepageTickets": "Get tickets",
-    "SlideText1": "Come on over and admire the delicious art.",
+    "SlideText1": "Come on over and admire the delicious artworks.",
     "SlideText2": "Let yourself be amazed and bewildered by the unique art works",
     "SlideText3": "Fruit on a table?",
     "SlideText4": "You can experience a lot at the LAM",
@@ -23,5 +23,8 @@
     "contactinfo3": "Postbus 224",
     "contactinfo4": "2170 AE Sassenheim",
     "contactinfo5": "Phone: 0252 508 800",
-    "contactinfo6": "Mail: info@lamlisse.nl"
+    "contactinfo6": "Mail: info@lamlisse.nl",
+    "footergoto": "Directly to",
+    "footerhomepage": "Homepage",
+    "footerquiz": "Which artwork are you?"
 }

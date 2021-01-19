@@ -12,6 +12,28 @@ p {
     color: black;
 }
 
+h1 {
+    color:black;
+}
+
+.go-to a{
+    color:black;
+    text-decoration: underline;
+}
+
+.contact a{
+    color:black;
+    text-decoration: underline; 
+}
+
+.contact a:hover {
+    color:darkblue;
+}
+
+.go-to a:hover {
+    color:darkblue;
+}
+
 #footer-logo {
     max-height: 50px;
     max-width: auto;

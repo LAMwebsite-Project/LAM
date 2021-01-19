@@ -2,6 +2,11 @@
 
 
 <div id="page-container">
+    <div class="go-to">
+        <h1><%= footergoto%></h1>
+        <a href="/"><%= footerhomepage%></a><br>
+        <a href="/quiz"><%= footerquiz%></a><br>
+    </div>
     <div class="contact">
         <p><strong><%= contactinfo%></strong></p>
         <img src="/resources/footer/LAM_logo.png" alt="LAM logo wit" id="footer-logo">
@@ -9,7 +14,8 @@
         <p><%= contactinfo3%></p>
         <p><%= contactinfo4%></p>
         <p><%= contactinfo5%></p>
-        <p><%= contactinfo6%></p>
+        <a href="mailto:info@lamlisse.nl"><%= contactinfo6%></a>
     </div>
+
     <footer id="footer"><%= copyright%></footer>
 </div>

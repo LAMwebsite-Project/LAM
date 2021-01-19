@@ -64,10 +64,12 @@
 
 .prev {
   left: 0%;
+  color:black
 }
 
 .next {
   right: 0%;
+  color: black;
 }
 
 /* Position the "next button" to the right */

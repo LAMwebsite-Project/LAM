@@ -17,8 +17,8 @@ router.get('/GET/quiz', (req, res) => {
         
         let number = Math.floor(Math.random() * 10 + 1);
 
-        if(used.includes(number)) {
-            continue;
+        while(used.includes(number)) {
+            number = Math.floor(Math.random() * 10 + 1);
         } 
 
         let tempJSON = require(`../quiz_questions/${language}/${number}.json`);

@@ -6,6 +6,7 @@
         <h1><%= footergoto%></h1>
         <a href="/"><%= footerhomepage%></a><br>
         <a href="/quiz"><%= footerquiz%></a><br>
+        <a id="url-tickets" href="https://www.lamlisse.nl/tickets/"><%= footertickets%></a>
     </div>
     <div class="contact">
         <p><strong><%= contactinfo%></strong></p>
@@ -13,9 +14,13 @@
         <p><%= contactinfo2%></p>
         <p><%= contactinfo3%></p>
         <p><%= contactinfo4%></p>
-        <p><%= contactinfo5%></p>
+        <a href="tel:0252 508 800"><%= contactinfo5%></a>
+        <br>
         <a href="mailto:info@lamlisse.nl"><%= contactinfo6%></a>
     </div>
-
-    <footer id="footer"><%= copyright%></footer>
+    <div class="footer">
+        <footer><%= copyright%> | <a id="change-url" href="https://www.lamlisse.nl/"><%= LAM_web%></a></footer>
+    </div>
+    
 </div>
+<script src="/resources/footer/script.js"></script>

@@ -16,6 +16,10 @@ h1 {
     color:black;
 }
 
+a {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .go-to a{
     color:black;
     text-decoration: underline;
@@ -23,7 +27,7 @@ h1 {
 
 .contact a{
     color:black;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .contact a:hover {
@@ -39,7 +43,7 @@ h1 {
     max-width: auto;
 }
 
-#footer {
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -48,4 +52,9 @@ h1 {
     background-color: black;
     color: white;
     padding-top: 5px;
+}
+
+#change-url{
+    color: white;
+    text-decoration: underline;
 }
